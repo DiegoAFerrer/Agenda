@@ -75,8 +75,6 @@ public class Direccion{
 
     @Override
     public String toString(){
-        return this.calle + this.no_casa + ", " + this.colonia + "; " + this.ciudad + ", " + this.estado + ". " + this.pais + ". C.P: " + this.codigoPostal;
+        return String.format("Calle y No de Casa: %s %s. \nColonia: %s. \nCiudad: %s. Estado: %s. País: %s. \nC.P.:%S", this.calle, this.no_casa, this.colonia, this.ciudad, this.estado, this.pais, this.codigoPostal);
     }
-
-
 }

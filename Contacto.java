@@ -23,8 +23,8 @@ public class Contacto{
         return this.email;
     }
 
-    public String getDireccion(){
-        return this.direccion.toString();
+    public Direccion getDireccion(){
+        return this.direccion;
     }
 
       public void setNombre(String nombre){
@@ -45,6 +45,6 @@ public class Contacto{
 
     @Override
     public String toString(){
-        return "Nombre: " + this.nombre + ". Telefono: " + this.telefono + ". Correo: " + this.email;
+        return String.format("Nombre: %s \nTeléfono: %s \nCorreo: %s \nDirección: \n%s", this.nombre, this.telefono, this.email, this.direccion.toString());
     }
 }
